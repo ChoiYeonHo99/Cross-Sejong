@@ -1,0 +1,33 @@
+ <!DOCTYPE html>
+ <html>
+     <head>
+        <title>우왕좌왕 세종대왕</title>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="/assets/favicon.ico">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+     </head>
+     <body>
+        <div id='mygame'>
+        </div>
+        <script>
+            // 우클릭 방지
+            document.addEventListener('contextmenu', function(e) {
+              e.preventDefault();
+            });
+        </script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="bundle.js" charset="utf-8"></script>
+
+     </body>
+ </html>
+
+ <style>
+     body {
+        background-color:#101212;
+    }
+ </style>

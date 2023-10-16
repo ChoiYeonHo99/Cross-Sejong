@@ -1,0 +1,143 @@
+<style>
+    @font-face {
+        font-family: "BR-R";
+        src: url("assets/fonts/BR-R.otf") format("opentype");
+        font-weight: normal;
+    }
+
+    .text-overlay {
+        position: absolute;
+        left: -30px;
+    }
+
+    .input-overlay {
+        position: absolute;
+        left: 200px;
+    }
+
+    .user-input {
+        background-color: transparent;
+        color: #3a2a24;
+        font-family: "BR-R";
+        font-size: 50px;
+        padding: 5px;
+        width: 550px;
+        border: 0px;
+    }
+    ::placeholder
+    {
+        color: #9b8573;
+        font-size: 47px;
+    }
+
+    .a_text {
+        background-color: transparent;
+        color: #3a2a24;
+        font-family: "BR-R";
+        font-size: 50px;
+        padding: 0;
+    }
+
+    #roomname {
+        top: 80px;
+        width: 200px;
+    }
+
+    #roomname_input {
+        top: 75px;
+    }
+
+    #password {
+        top: 210px;
+        width: 300px;
+    }
+
+    #password_input {
+        top: 205px;
+    }
+
+    #level {
+        top: 340px;
+    }
+
+    #difficultychoice {
+        position: inherit;
+
+    }
+    
+    #basicButton {
+        position: absolute;
+        top: 400px;
+        left: -75px;
+    }
+
+    #normalButton {
+        position: absolute;
+        top: 400px;
+        left: 140px;
+    }
+
+    #hardButton {
+        position: absolute;
+        top: 400px;
+        left: 355px;
+    }
+
+    #fairyButton {
+        position: absolute;
+        top: 400px;
+        left: 570px;
+    }
+    
+    #makeButton {
+        position: absolute;
+        top: 575px;
+        left: -10px;
+    }
+
+    #exitButton {
+        position: absolute;
+        top: 575px;
+        left: 450px;
+    }
+    
+    .level-image {
+        transform: scale(0.65);
+    }
+
+    .confirm-image {
+        transform: scale(1.27);
+    }
+
+    #background {
+        transform: scale(1.3);
+    }
+
+
+</style>
+
+<div id="image-container">
+    <img id="background" src="assets/image/createRoom.png">
+    <div class="text-overlay" id="roomname">
+        <a class="a_text">방이름</a>
+    </div>
+    <div class="input-overlay" id="roomname_input">
+        <input type="text" class="user-input" placeholder="공백 포함 한글 8글자 이내" id="user_roomname">
+    </div>
+    <div class="text-overlay" id="password">
+        <a class="a_text">비밀번호</a>
+    </div>
+    <div class="input-overlay" id="password_input">
+        <input type="text" class="user-input" placeholder="(선택) 4자리 숫자" id="user_roompw">
+    </div>
+    <div class="text-overlay" id="level">
+        <a class="a_text">난이도 설정</a>
+    </div>
+    <div id="basicButton"><img class="level-image" src="assets/image/초급(N).png"></div>
+    <div id="normalButton"><img class="level-image" src="assets/image/중급(N).png"></div>
+    <div id="hardButton"><img class="level-image" src="assets/image/고급(N).png"></div>
+    <div id="fairyButton"><img class="level-image" src="assets/image/동화(N).png"></div>
+    <div id="makeButton"><img class="confirm-image" src="assets/image/방만들기(N).png"></div>
+    <div id="exitButton"><img class="confirm-image" src="assets/image/취소(N).png"></div>
+</div>
+  
