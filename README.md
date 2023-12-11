@@ -1,5 +1,6 @@
 # Cross-Sejong
 프로젝트 진행기간: 2022-7 ~ 2023.6
+- 담당 파트: server/socket/index.js, src/scenes/GameScene.js
 
 **요약**
 - (주)레이븐어스에서 제작한 오프라인 보드게임 <우왕좌왕 세종대왕>을 온라인으로 구현
